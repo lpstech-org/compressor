@@ -31,22 +31,20 @@ This project is a local AI-assisted compressor for PowerPoint and PDF files.
      git push
 
 ## Build and start with Docker
-docker compose build
-docker compose up -d
+- docker compose build
+- docker compose up -d
 
 ## Check containers 
-docker compose ps
-
-Expected:
-
-compress-ai-ollama (Ollama server)
-compress-ai-backend (FastAPI, port 8001)
-compress-ai-frontend (Streamlit, port 8502)
+- docker compose ps
+- Expected:
+  - compress-ai-ollama (Ollama server)
+  - compress-ai-backend (FastAPI, port 8001)
+  - compress-ai-frontend (Streamlit, port 8502)
 
 ## Useful endpoints to remember:
-Health check: http://localhost:8001/api/health
-Swagger UI: http://localhost:8001/docs
-Frontend app: http://localhost:8502
+- Health check: http://localhost:8001/api/health
+- Swagger UI: http://localhost:8001/docs
+- Frontend app: http://localhost:8502
 
 ## Project Structure
 
