@@ -1,0 +1,38 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: compress-ai-ollama
+    volumes:
+      - ollama-data:/root/.ollama
+    ports:
+      - "11434:11434"
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend.Dockerfile
+    container_name: compress-ai-backend
+    depends_on:
+      - ollama
+    environment:
+      - OLLAMA_BASE_URL=http://ollama:11434
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./uploads:/app/uploads
+      - ./work:/app/work
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend.Dockerfile
+    container_name: compress-ai-frontend
+    depends_on:
+      - backend
+    environment:
+      - API_BASE_URL=http://backend:8000/api
+    ports:
+      - "8502:8501"
+
+volumes:
+  ollama-data:

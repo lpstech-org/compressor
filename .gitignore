@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.log
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# IDE / editor settings
+.vscode/
+.idea/
+*.code-workspace
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Docker
+*.pid
+*.log
+docker-data/
+*.tmp
+
+# App runtime folders (not needed in git)
+uploads/
+work/
+flow_uploads/
+flow_uploads_pdf/
+
+# Fonts (if you add company fonts locally)
+fonts/
+
+# Environment / secrets
+.env
+*.env
+
+# Misc
+*.sqlite3
