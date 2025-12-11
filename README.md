@@ -36,7 +36,6 @@ This project is a local AI-assisted compressor for PowerPoint and PDF files.
 
 ## Check containers 
 - docker compose ps
-- Expected:
   - compress-ai-ollama (Ollama server)
   - compress-ai-backend (FastAPI, port 8001)
   - compress-ai-frontend (Streamlit, port 8502)
