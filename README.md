@@ -20,15 +20,15 @@ This project is a local AI-assisted compressor for PowerPoint and PDF files.
 
 ## Clone the repo  
 1. In a terminal (Git Bash / PowerShell / CMD):
-     git clone https://github.com/lpstech-org/compressor.git
+     - git clone https://github.com/lpstech-org/compressor.git
 2. See what changed
-     git status
+     - git status
 3. Stage changes
-     git add .
+     - git add .
 4. Commit with a clear message
-     git commit -m "Describe what you changed"
+     - git commit -m "Describe what you changed"
 5. Push to GitHub
-     git push
+     - git push
 
 ## Build and start with Docker
 - docker compose build
